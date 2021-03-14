@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Html extends Model
 {
     use HasFactory;
-    protected $table = 'htmls';
+    protected $table = 'poptin_htmls';
     protected $fillable = ['popup_code','popup_html'];
 }
