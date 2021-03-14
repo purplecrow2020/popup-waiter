@@ -19,6 +19,10 @@ class CreateHtmlsTable extends Migration
             $table->string('popup_html');
             $table->timestamps();
         });
+
+        Schema::table('htmls', function (Blueprint $table) {
+            $table->longText('popup_html')->change();
+        });
     }
 
     /**
